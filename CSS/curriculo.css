@@ -1,0 +1,138 @@
+*{ 
+    padding: 0 ;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+@keyframes animacion_test{
+    from{
+        background-color: 		rgb(250, 128, 114);
+    }
+    to{
+        background-color: 			rgb(244, 164, 96);
+    }
+}
+
+.animada{
+    width: 100%;
+    background-color: 	white;
+    color:white;
+    text-align:center;
+    height: 200px;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;/*h1, h2*/
+    animation-name: animacion_test;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.main-container{
+    border: 4px solid;
+    border-radius: 20px;
+    margin: 2rem; 
+    animation-name: animacion_test;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+article{
+    width: 40%;
+    height: 400px;
+    display: inline-block;
+    background-color: 		rgb(60, 179, 113);
+    border-radius: 5%;
+}
+aside{
+    
+    border-radius: 5%;
+    width: 40%;
+    height: 250px;
+    display: inline-block;
+    background-color: 	rgb(46, 139, 87);
+}
+ul{
+    list-style: none;
+}
+a{
+    color:	white;
+    text-decoration: none;
+}
+hr{
+    border-color: white;
+    margin:20px 0;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+/*especificos*/
+.menu li{
+    margin-right: 70px;
+    margin-left: 50px;
+}
+.menu a{
+    position: relative; /*que se puede mover*/
+    display: block;
+    overflow: hidden;
+}
+.menu a span{
+    transition: transform 0.2s ease-out;/*de salida*/
+}
+.menu a span:first-child{
+    /*primer elemento de la lista/arreglo*/
+    display: inline-block;
+    padding: 10px;
+
+}
+.menu a span :last-child{
+    position: absolute;/*no se movera*/
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transform:translateY(-100%) /*parece q se va*/
+}
+.menu i{
+    font-size:30px;
+}
+.menu a:hover span:first-child{
+    transform: translateY(100%);
+}
+.menu a:hover span :last-child,
+.menu[data-animation] a:hover span:last-child{
+    transform: none;
+}
+/*animaciones*/
+.menu[data-animation="to-top"] a span:last-child{
+    transform: translateY(100%)
+}
+.menu[data-animation="to-top"] a:hover span:first-child{
+    transform: translateY(-100%)
+}
+.menu[data-animation="to-right"] a span:last-child{
+    transform: translateX(-100%)
+}
+.menu[data-animation="to-right"] a:hover span:first-child{
+    transform: translateX(100%)
+}
+.menu[data-animation="to-left"] a span:last-child{
+    transform: translateX(100%)
+}
+.menu[data-animation="to-left"] a:hover span:first-child{
+    transform: translateX(-100%)
+}
+.page-footer{
+    width: 100%;
+    color:whitesmoke;
+    text-align: left;
+    animation-name: animacion_test;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
