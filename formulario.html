@@ -8,7 +8,7 @@
     <script language="JavaScript" type ="text/JavaScript" src = "./JS/validarformulario.js"></script>
 </head>
 <body>
-    <form method = "GET" name = "fomulario" action = "formulario.html" onsubmit ="">
+    <form method = "GET" name = "fomulario" action = "formulario.html" onsubmit ="return validar(this)">
         Nombre :
         <br>
         <input type="text" name="nombre" size="20">
@@ -26,5 +26,6 @@
         <input type ="reset" value="Borrar" name = "borrar">
 
     </form>
+    <a href = "index.html">Regresar al menu principal</a>
 </body>
 </html>
