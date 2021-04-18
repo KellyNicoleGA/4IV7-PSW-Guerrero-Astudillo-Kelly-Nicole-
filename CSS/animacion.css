@@ -55,13 +55,51 @@ condicionales (uso de @)
     animation-direction: alternate;
 }
 .loader{
-    width: 64px;
-    height: 64px;
-    border: 5px solid	#F4A460;
-    border-top: 5px solid  	#F5DEB3 ;
+    width: 350px;
+    height: 350px;
+    border: 5px solid	black;
+    /*border-top: 5px solid  	#F5DEB3 ;*/
     border-radius: 50%;
     animation: girar 2s linear infinite;
 }
+/*
+<div class = "eme">
+        <div class = "labeldos"> M</div>
+    </div>
+    <div class = "rayauno"></div>
+    <div class = "rayados"></div>
+*/
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  .labeldos{
+    width: 150px;
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+    padding: 1rem;
+    /*border-radius: 20px;*/
+    text-align: center;
+    /*aquí va la animación*/
+    animation-name: blink-animation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+  }
+
 
 .loader-double{
     width: 64px;

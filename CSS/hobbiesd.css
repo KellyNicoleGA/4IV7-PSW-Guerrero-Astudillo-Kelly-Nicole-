@@ -1,0 +1,177 @@
+
+
+@keyframes animacion_test{
+    from{
+        background-color: 	palevioletred;
+    }
+    to{
+        background-color: rgb(243, 176, 187);
+    }
+}
+.animada{
+    width: 100%;
+    background-color: 	palevioletred;
+    color:white;
+    text-align:center;
+    height: 200px;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    animation-name: animacion_test;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+nav{
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.texto{
+    font-family: 'Agency FB', Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 445px;
+    text-align:center;
+    margin-right: 4px;
+    
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    overflow: hidden;
+    width: 1200px;
+  }
+  
+.uno, .dos{
+    float: left;
+    width: 50%;
+
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 35px; font-family: 'Agency FB';
+    padding: 14px 14px;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 0px;
+  }
+  
+li a:hover {
+    background-color:mediumvioletred;
+  }
+  .element, .element1, .element2, .element3{
+      float: left;
+      width: 25%;
+      height: 300px;
+      position: relative;
+      margin: 35px;
+  }
+  .front, .front1,.front2, .front3 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left: 0;
+      transition: all 0.5s linear;
+  }
+  .front img, .front1 img, .front2 img, .front3 img{
+      width: 100%;
+      height: 100%;
+  }
+  .back, .back1, .back2, .back3{
+      background: linear-gradient(to bottom right, pink, mediumvioletred);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      z-index: -2;
+      box-sizing: border-box;
+  }
+.pname, .pname1, .pname2, .pname3{
+      font-weight: bolder;
+      font-size: 24px;
+      font-family: 'Bembo';
+  }
+.description, .description1, .description2, .description3{
+    margin: 20px 0;
+    font-family: 'Agency FB';
+    font-size: 16px;
+
+}
+.back-content, .back-content1, .back-content2, .back-content3{
+    padding: 0 40px;
+}
+.element .back-content, .element1 .back-content1, .element2 .back-content2, .element3 .back-content3{
+    transform: scale(0);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.element:hover .front, .element1:hover .front1, .element2:hover .front2, .element3:hover .front3{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    left: calc(100% - 50px);
+    top:calc(15% - 50px);
+    box-shadow: 0 0 20px mediumvioletred, 0 0 40px mediumvioletred;
+}
+.element:hover .front img, .element1:hover .front1 img, .element2:hover .front2 img, .element3:hover .front3 img{
+    border-radius: 50px;
+}
+.element:hover .back-content, .element1:hover .back-content1, .element2:hover .back-content2, .element3:hover .back-content3{
+    transform: scale(1);
+    opacity: 1;
+}
+.catfish,  .hers, .feng{
+    font-family: 'Agency FB';
+    font-size: 20px;
+    height: 80px;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.feng2, .catdos, .hers2{
+    font-family: 'Agency FB';
+    font-size: 20px;
+    height: 200px;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+
+}
+.title, .album, .cancion, .cat, .alb2, .titlef, .albumf, .cancionf, .fengs, .alb3,  .albumh, .cancionh, .titleh, .alb4,  .her{
+    float: left;
+    width: 30%;
+    display:block;
+    color: white;
+    text-align: center;
+    font-size: 35px; font-family: 'Agency FB';
+    text-decoration: none; 
+    
+}
+.can2, .can3, .can4{
+    padding-top: 3rem;
+    float: left;
+    padding-left:3rem;
+}
+  
+.title:hover, .album:hover, .cancion:hover, .titlef:hover, .titleh:hover, .albumf:hover, .albumh:hover, .cancionf:hover, .cancionh:hover{
+    background-color:mediumvioletred;
+}
