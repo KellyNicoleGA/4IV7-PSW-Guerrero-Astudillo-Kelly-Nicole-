@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(75, 46, 57);
+}
+.texto{
+    color: white;
+    font-family: Calibri Light;
+    font-size: 1.3rem;
+
+}
+.crearc{
+    display: block;
+    color: white;
+    font-family: Calibri Light;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1.5rem;
+    text-decoration: none;
+
+}
+form{
+    background-color: rgb(50, 2, 31);
+    color: white;
+    font-family: Calibri Light;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin: 2rem;
+    width: 30%;
+    
+}
+.imagelogo{
+    width: 40%;
+}
+img, form{
+    display: inline-block;
+    vertical-align: middle;   
+    
+}
+input{
+    background-color: rgb(75, 46, 57);
+    margin: 1.5rem;
+    padding: .5rem;
+    color: white;
+}
+.boton1, .boton2{
+    background-color: #6f7d8c;
+    color: white;
+    font-family: Calibri Light;
+    font-size: 1.3rem;
+
+}
+.regresar{
+    display: block;
+    color: #6f7d8c;
+    font-family: Alstoria;
+    font-size: 30px;
+    text-align: center;
+    padding: 26px;
+    text-decoration: none;
+}

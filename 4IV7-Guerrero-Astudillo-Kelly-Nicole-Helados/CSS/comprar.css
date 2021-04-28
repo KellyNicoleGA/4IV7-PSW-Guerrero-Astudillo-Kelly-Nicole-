@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(50, 2, 31);
+}
+h1{
+    color: white;
+}
+a{
+    display: block;
+    color: #6c596e ;
+    font-family: Alstoria;
+    font-size: 2rem;
+    text-align: right;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+header{
+    background-color: rgb(50, 2, 31);
+}
+a, .logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo{
+    float: left;
+    padding-right:70%;
+    padding-top: 1rem;
+}/*
+.paletas{
+    background-color: rgb(119, 160, 169); 
+
+}
+.helado{
+    background-color: #6f7d8c;
+}
+.aguas{
+    background-color:#6c596e   ;
+
+}*/
+.paletas, .helado, .aguas{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1rem;
+    margin: 2rem;
+}
+.helados{
+    margin: auto;
+    display: block;
+}
+footer{
+    background-color: #4b2e39;
+    padding: 1.5rem;
+}
