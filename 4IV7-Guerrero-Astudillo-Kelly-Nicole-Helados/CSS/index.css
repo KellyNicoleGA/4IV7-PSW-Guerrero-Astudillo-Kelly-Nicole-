@@ -1,3 +1,5 @@
+
+
 .imagelogo{
     align-content: center;
     padding: 0;
@@ -12,11 +14,11 @@
     /*style="background-color: blueviolet; display: block"*//*
 }*/
 body{
-    background-color: rgb(75, 46, 57);
+    background-color: #fee9e1;
 }
 ul{
     list-style-type: none;
-    background-color: rgb(50, 2, 31);
+    background-color: #fad4c0;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -38,7 +40,7 @@ li{
 }*/
 li a{
     display: block;
-    color: #6C596E;
+    color: #fee9e1;
     font-family: Alstoria;
     font-size: 30px;
     text-align: center;
@@ -46,7 +48,7 @@ li a{
     text-decoration: none;
 }
 li a:hover{
-    background-color: #6f7d8c;
+    background-color: #8fbc94;
 
 }
 .container1{
@@ -56,7 +58,7 @@ li a:hover{
 .imagen{
     width: 40%;
     padding: 1rem;
-    background-color: #6c596e;
+    background-color: #8fbc94; 
 
 }
 .image{
@@ -66,7 +68,7 @@ li a:hover{
     padding: 2rem;
     width: 40%;
     color:  #6C596E;
-    border-color: #6C596E;
+    border-color: #8fbc94;
     border-width: 0.2rem;
     border-style: solid;
     font-family: Calibri Light;
@@ -80,17 +82,17 @@ li a:hover{
     vertical-align: middle;
 }
 footer{
-    background-color: rgb(50, 2, 31);
+    background-color: #8fbc94;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    color: #6c596e;
+    color: #fee9e1;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 footer a{
     display: block;
-    color: #6f7d8c;
+    color: #fee9e1;
     font-family: Alstoria;
     font-size: 2rem;
     text-align: center;
